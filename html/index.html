@@ -1,0 +1,567 @@
+<!--
+    Name: Sagar Singh
+    Student Number: c22731795
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+        <title>FIFA World Cup One-stop Website</title>
+    </head>
+
+    <body>
+        <div id="main">
+            <header>
+                <nav class="pinned"  id="FIFAstore">                
+                    <ul>
+                        <li><a href="#index">FIFA WORLD CUP 2022</a></li>
+                        <li class="floatright"><a href="#index"> EN </a></li>
+                        <li class="floatright"><a href="Fifa.com/store">FIFA Store</a></li>
+                    </ul>   
+                </nav>
+
+                <nav>
+                    <ul class="nav nav-pills">
+                        <li>
+                            <img class="fifaLogo" src="../Images/FIFA-logo.png" alt="FIFA logo">
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../html/index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/countriesAndPlayers.html">Countries and Players</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/matches.html">Matches</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/results.html">Results</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/predictions.html">Predictions</a>
+                        </li>
+                  </ul>
+                </nav>
+
+            </header>
+            
+            <div id="imageslide">
+                <div class="headerimages">
+                    <img src="../Images/headerimg1.jpg" alt="World Cup trophy with a city background">
+                    <div class="slideno" id="heimg1"></div>
+                    <div class="subtitles">
+                        <h3>World Cup Trophy</h4>
+                        <h4>Qatar</h4>
+                    </div>
+                </div>
+
+                <div class="headerimages">
+                    <img src="../Images/headerimg2.jpg" alt="four football stars">
+                    <div class="slideno" id="heimg2"></div>
+                    <div class="subtitles">
+                        <h3>Who will be champions?</h4>
+                        <h4>Football Stars</h4>
+                    </div>
+                </div>
+
+                <div class="headerimages">
+                    <img src="../Images/headerimg3.jpg" alt="World Cup 2022 Qatar biggest stadium">
+                    <div class="slideno" id="heimg3"></div>
+                    <div class="subtitles">
+                        <h3>Al Janoub Stadium</h4>
+                        <h4>Capacity: 44 000 </h4>
+                    </div>
+                </div>
+
+                <div class="headerimages">
+                    <img src="../Images/headerimg4.jpg" alt="Argentina FC celebrating (Di Maria, Lionel Messi, Julian Alvarez">
+                    <div class="slideno" id="heaimg4"></div>
+                    <div class="subtitles">
+                        <h3 >Will Argentina win it this year?</h4>
+                        <h4 class="remove">Highest predicted chance to win</h4>
+                    </div>
+                </div>
+
+                <div class="imgbutton">
+                    <span class="headerimgno" onclick="heaImg(1)"></span>
+                    <span class="headerimgno" onclick="heaImg(2)"></span>
+                    <span class="headerimgno" onclick="heaImg(3)"></span>
+                    <span class="headerimgno" onclick="heaImg(4)"></span>
+                </div>
+            </div>
+
+            <section class="content">
+                <section id="welcome">
+                    <div id="welcometext">
+                        <h4>Welcome Video</h4>
+                    </div>
+
+                    <div id="welcomevideodiv">
+                        <div><img class="wctrophy" src="../Images/wctrophy-removebg-preview.png" alt="World Cup trophy"></div>
+                            <iframe src="https://www.youtube.com/embed/EXXe-G-_lxI" title="The Official FIFA World Cup Qatar 2022™ Theme | FIFA World Cup 2022 Soundtrack" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div><img class="wctrophy" src="../Images/wctrophy-removebg-preview.png" alt="World Cup trophy"></div>
+                    </div>
+                </section>
+
+                <section id="introwc">
+                    <h4>What is the World Cup?</h4>
+                    <div id="introwctextimage">
+                        <p> The World Cup is the largest event held ever. It is a sporting competition held every 4 years 
+                            to crown the best country in Football. The tournament contains 32 Senoir men's teams, split into 
+                            8 groups of 4 teams where a round robin is played. The top 2 teams of each group 
+                            advance into the last 16 round. The Last 16 is where the traditional tournament style 
+                            begins where its sudden death, losing results in Elimination.
+                            <br> <br>
+                            This year the World Cup is taking place in Qatar as its hosts. The event begins 
+                            on November 20th and ends on December 18th at the Lusail Stadium. This is 22nd World Cup in History.
+                            All matches can be viewed freely from national broadcasting services.
+                            <br> <br>
+                            FIFA is the organization that governs the World Cup events. The event brings viewers from every country uniting them for one cause.
+                            Following your own country or any country you are a fan is a pride to support them. From big upsets to incredible individual performances, the World Cup has the most intense and entertaining matches.
+                            <br> <br>
+                            Brazil have won a record 5 times the World Cup. Germany and Italy have 4 wins each at second most.
+                            Current champions are France with their win in Russia 2018 with complete domination in the tournament. Could they do it again and be the third country to win it back to back?
+                            <br> <br>
+                            Argentina are going into the tournaments as the favorites to win it all. They have a 36 unbeaten run (1 off from tieing the record) and won Copa America and Finalisma recently. Are Messi's dreams of winning the World Cup going to be achieved?
+                        </p>
+                        <img src="../Images/wctrophy1.jpg" alt="">
+                    </div>
+                </section>
+
+                <div class="break"></div>
+
+                <div id="flaglistloop">
+                    <div>
+                        <img src="../Images/flags/001-saudi-arabia.png" alt="Saudi Arabia flag">
+                        <img src="../Images/flags/002-wales.png" alt="Wales flag">
+                        <img src="../Images/flags/003-iran.png" alt="Iran flag">
+                        <img src="../Images/flags/004-netherlands.png" alt="Netherlands flag">
+                        <img src="../Images/flags/005-senegal.png" alt="Senegal flag">
+                        <img src="../Images/flags/006-qatar.png" alt="Qatar flag">
+                        <img src="../Images/flags/007-ecuador.png" alt="Ecuador flag">
+                        <img src="../Images/flags/008-england.png" alt="England flag">
+                        <img src="../Images/flags/009-united-states-of-america.png" alt="USA flag">
+                        <img src="../Images/flags/010-argentina.png" alt="Argentina flag">
+                        <img src="../Images/flags/011-mexico.png" alt="Mexico flag">
+                        <img src="../Images/flags/012-poland.png" alt="Poland flag">
+                        <img src="../Images/flags/013-France.png" alt="France flag">
+                        <img src="../Images/flags/014-denmark.png" alt="Denmark flag">
+                        <img src="../Images/flags/015-tunisia.png" alt="Tunisia flag">
+                        <img src="../Images/flags/016-australia.png" alt="Australia flag">
+                        <img src="../Images/flags/017-spain.png" alt="Spain flag">
+                        <img src="../Images/flags/018-germany.png" alt="Germany flag">
+                        <img src="../Images/flags/019-japan.png" alt="Japan flag">
+                        <img src="../Images/flags/020-costa-rica.png" alt="Costa Rica flag">
+                        <img src="../Images/flags/021-belgium.png" alt="Belgium flag">
+                        <img src="../Images/flags/022-canada.png" alt="Canada flag">
+                        <img src="../Images/flags/023-morocco.png" alt="Morocco flag">
+                        <img src="../Images/flags/024-croatia.png" alt="Croatia flag">
+                        <img src="../Images/flags/025-brazil.png" alt="Brazil flag">
+                        <img src="../Images/flags/026-cameroon.png" alt="Cameroon flag">
+                        <img src="../Images/flags/027-serbia.png" alt="Serbia flag">
+                        <img src="../Images/flags/028-switzerland.png" alt="Switzerland flag">
+                        <img src="../Images/flags/029-portugal.png" alt="Portugal flag">
+                        <img src="../Images/flags/030-ghana.png" alt="Ghana flag">
+                        <img src="../Images/flags/031-uruguay.png" alt="Uruguay flag">
+                        <img src="../Images/flags/032-south-korea.png" alt="Republic of Korea flag">
+                        <img src="../Images/flags/001-saudi-arabia.png" alt="Saudi Arabia flag">
+                        <img src="../Images/flags/002-wales.png" alt="Wales flag">
+                        <img src="../Images/flags/003-iran.png" alt="Iran flag">
+                        <img src="../Images/flags/004-netherlands.png" alt="Netherlands flag">
+                        <img src="../Images/flags/005-senegal.png" alt="Senegal flag">
+                        <img src="../Images/flags/006-qatar.png" alt="Qatar flag">
+                        <img src="../Images/flags/007-ecuador.png" alt="Ecuador flag">
+                        <img src="../Images/flags/008-england.png" alt="England flag">
+                        <img src="../Images/flags/009-united-states-of-america.png" alt="USA flag">
+                    </div>  
+                </div>
+
+                <section id="stadiums">
+                    <h4>Stadiums</h4>
+                    <p>This year's World Cup is no let down as it cost over €210 billion to
+                         create. Record breaking investment in the World Cup. The second and
+                          third most expensive World Cups were Russia 2018 and Brazil 2014 
+                          with €14 Billion and €18 billion respectively. Qatar went completely
+                           over the top for the preparations. As a small country, Qatar had to
+                           spend vast amounts money into building housing for all the fans coming
+                           over during the event. They built massive houses, reusable and 
+                           portable tents and containers to complete redesign of city infrastructure.
+                           When it was announced that Qatar would host the next World Cup, the main city (where most
+                            stadiums would be) did not even exist then. 8 Football stadium were 
+                            built beside the major infrastructure. <br> <br> When Qatar was given permission to host
+                             in 2012, since then 6500 migrant workers have died (Guardian) building for the World Cup.
+                             On the other hand, 2021 Amnesty International report claimed the death toll was infact 15,021.
+                        </p>
+                    <div class="rowstadium1">
+                        <div><h3>AL Bayt Stadium</h3><h4>Capacity: 68,895   Semi-finals</h4></div> 
+                        <div class="imgdivider"></div>
+                        <div class="stadiumimg"><img src="../Images/albayt.jpg" alt="Al Bayt Stadium"></div>
+                    </div>
+                    <div class="rowstadium2">
+                        <div class="stadiumimg" ><img src="../Images/aljanoub.jpg" alt="Al Janoub Stadium"></div>
+                        <div class="imgdivider"></div>
+                        <div><h3>Al Janoub Stadium</h3><h4>Capacity: 44,325</h4></div> 
+                    </div>
+                    <div class="rowstadium1">
+                        <div><h3>Khalifa International Stadium</h3><h4>Capacity: 45,857   Bronze game</h4></div> 
+                        <div class="imgdivider"></div>
+                        <div class="stadiumimg" ><img src="../Images/khalifaint.jpg" alt="Khalifa International Stadium"></div>
+                    </div>
+                    <div class="rowstadium2">
+                        <div class="stadiumimg"><img src="../Images/lusail.jpg" alt="Lusail Stadium"></div>
+                        <div class="imgdivider"></div>
+                        <div><h3>Lusail Stadium</h3><h4>Capacity: 88,966  Finals</h4></div> 
+                    </div>
+                    <div class="rowstadium1">
+                        <div><h3>974 Stadium</h3><h4>Capacity: 44,089</h4></div> 
+                        <div class="imgdivider"></div>
+                        <div class="stadiumimg"><img src="../Images/974.jpg" alt="974 Stadium"></div>
+                    </div>
+                    <div class="rowstadium2">
+                        <div class="stadiumimg"><img src="../Images/althumama.jpg" alt="Al Thumama Stadium"></div>
+                        <div class="imgdivider"></div>
+                        <div><h3>Al Thumama Stadium</h3><h4>Capacity: 44,400  Quarter Finals</h4></div> 
+                    </div>
+                    <div class="rowstadium1">
+                        <div><h3>Ahmad Bin Ali Stadium</h3><h4>Capacity: 45,032</h4></div> 
+                        <div class="imgdivider"></div>
+                        <div class="stadiumimg"><img src="../Images/ahmadbinali.jpg" alt="Ahmad Bin Ali Stadium"></div>
+                    </div>
+                    <div class="rowstadium2">
+                        <div class="stadiumimg"><img src="../Images/educationcity.jpg" alt="Education City Stadium"></div>
+                        <div class="imgdivider"></div>
+                        <div><h3>Education City Stadium</h3><h4>Capacity: 44,667   Quarter Finals</h4></div> 
+                    </div>
+                </section>
+                
+                <div class="break"></div>
+
+                <section id="introwebsite">
+                    <h4>Website Guide</h4>
+                    <p>
+                        From below you can find the contact/survery form <br>
+                        Countries and players page has all players and their essential information. Countries' formation. <br>
+                        Matches page contains all match time and location up to the end of the groupstages. <br>
+                        Results page contains the group results and the format for the final 16 playoffs. <br>
+                        Predictions page has inputs from various sources and their opinion on which country will win it all.
+                    </p> 
+                </section>
+
+                <div class="break"></div>
+
+                <section id="countriesplaying">
+                    <h4>Countries</h4>
+                    <div class="worldMapdiv"><img id="worldmap" src="../Images/worldmap.PNG" alt="World of map of all countries in the 2022 World Cup marked"></div>
+                    <div class="break"></div>
+                    <table id="countryflags">
+                        <tr>
+                            <th>                            
+                                <div class="flagcontainer">
+                                    <div class="flaghover"><img src="../Images/flags/001-saudi-arabia.png" alt="Saudi Arabia flag"></div>
+                                    <h5>Saudi Arabia</h5>
+                                </div>
+                            </th>
+                            <th>                            
+                                <div class="flagcontainer">
+                                    <div class="flaghover"><img src="../Images/flags/002-wales.png" alt="Wales flag"></div>
+                                    <h5>Wales</h5>
+                                </div>
+                            </th>
+                            <th>                            
+                                <div class="flagcontainer">
+                                    <div class="flaghover"><img src="../Images/flags/001-iran.png" alt="Iran flag"></div>
+                                    <h5>Iran</h5>
+                                </div>
+                            </th>
+                            <th>                            
+                                <div class="flagcontainer">
+                                    <div class="flaghover"><img src="../Images/flags/002-netherlands.png" alt="Netherlands flag"></div>
+                                    <h5>Netherlands</h5>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>                            
+                                <div class="flagcontainer">              
+                                    <div class="flaghover"><img src="../Images/flags/003-senegal.png" alt="Senegal flag"></div>
+                                    <h5>Senegal</h5>
+                                </div>
+                            </th>
+                            <th>                            
+                                <div class="flagcontainer">
+                                    <div class="flaghover"><img src="../Images/flags/006-qatar.png" alt="Qatar flag"></div>
+                                    <h5>Qatar</h5>
+                                </div>
+                            </th>
+                            <th>                            
+                                <div class="flagcontainer">
+                                    <div class="flaghover"><img src="../Images/flags/007-ecuador.png" alt="Ecuador flag"></div>
+                                    <h5>Ecuador</h5>
+                                </div>
+                            </th>
+                            <th>                            
+                                <div class="flagcontainer">
+                                    <div class="flaghover"><img src="../Images/flags/008-england.png" alt="England flag"></div>
+                                    <h5>England</h5>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>                            
+                                <div class="flagcontainer">
+                                    <div class="flaghover"><img src="../Images/flags/009-united-states-of-america.png" alt="USA flag"></div>
+                                    <h5>USA</h5>
+                                </div>
+                            </th>
+                            <th>                            
+                                <div class="flagcontainer">
+                                    <div class="flaghover"><img src="../Images/flags/010-argentina.png" alt="Argentina flag"></div>
+                                    <h5>Argentina</h5>
+                                </div>
+                            </th>
+                            <th>                            
+                                <div class="flagcontainer">
+                                    <div class="flaghover"><img src="../Images/flags/011-mexico.png" alt="Mexico flag"></div>
+                                    <h5>Mexico</h5>
+                                </div>
+                            </th>
+                            <th>                            
+                                <div class="flagcontainer">
+                                    <div class="flaghover"><img src="../Images/flags/012-poland.png" alt="Poland flag"></div>
+                                    <h5>Poland</h5>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>                            
+                                <div class="flagcontainer">
+                                    <div class="flaghover france"><img src="../Images/flags/013-France.png" alt="France flag"></div>
+                                    <h5>France</h5>
+                                </div>
+                            </th>
+                            <th>                            
+                                <div class="flagcontainer">
+                                    <div class="flaghover"><img src="../Images/flags/014-denmark.png" alt="Denmark flag"></div>
+                                    <h5>Denmark</h5>
+                                </div>
+                            </th>
+                            <th>                            
+                                <div class="flagcontainer">
+                                    <div class="flaghover"><img src="../Images/flags/015-tunisia.png" alt="Tunisia flag"></div>
+                                    <h5>Tunisia</h5>
+                                </div>
+                            </th>
+                            <th>                            
+                                <div class="flagcontainer">
+                                    <div class="flaghover"><img src="../Images/flags/016-australia.png" alt="Australia flag"></div>
+                                    <h5>Australia</h5>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>                            
+                                <div class="flagcontainer">
+                                    <div class="flaghover"><img src="../Images/flags/017-spain.png" alt="Spain flag"></div>
+                                    <h5>Spain</h5>
+                                </div>
+                            </th>
+                            <th>                            
+                                <div class="flagcontainer">
+                                    <div class="flaghover"><img src="../Images/flags/005-germany.png" alt="Germany flag"></div>
+                                    <h5>Germany</h5>
+                                </div>
+                            </th>
+                            <th>                            
+                                <div class="flagcontainer">
+                                    <div class="flaghover"><img src="../Images/flags/019-japan.png" alt="Japan flag"></div>
+                                    <h5>Japan</h5>
+                                </div>
+                            </th>
+                            <th>                            
+                                <div class="flagcontainer">
+                                    <div class="flaghover"><img src="../Images/flags/020-costa-rica.png" alt="Costa Rica flag"></div>
+                                    <h5>Costa Rica</h5>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>                            
+                                <div class="flagcontainer">
+                                    <div class="flaghover"><img src="../Images/flags/021-belgium.png" alt="Belgium flag"></div>
+                                    <h5>Belgium</h5>
+                                </div>
+                            </th>
+                            <th>                           
+                                <div class="flagcontainer">
+                                    <div class="flaghover"><img src="../Images/flags/006-canada.png" alt="Canada flag"></div>
+                                    <h5>Canada</h5>
+                                </div>
+                            </th>
+                            <th>                            
+                                <div class="flagcontainer">
+                                    <div class="flaghover"><img src="../Images/flags/023-morocco.png" alt="Morocco flag"></div>
+                                    <h5>Morocco</h5>
+                                </div>
+                            </th>
+                            <th>                            
+                                <div class="flagcontainer">
+                                    <div class="flaghover"><img src="../Images/flags/024-croatia.png" alt="Croatia flag"></div>
+                                    <h5>Croatia</h5>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>                            
+                                <div class="flagcontainer">
+                                    <div class="flaghover"><img src="../Images/flags/025-brazil.png" alt="Brazil flag"></div>
+                                    <h5>Brazil</h5>
+                                </div>
+                            </th>
+                            <th>                            
+                                <div class="flagcontainer">
+                                    <div class="flaghover"><img src="../Images/flags/026-cameroon.png" alt="Cameroon flag"></div>
+                                    <h5>Cameroon</h5>
+                                </div>
+                            </th>
+                            <th>                            
+                                <div class="flagcontainer">
+                                    <div class="flaghover"><img src="../Images/flags/027-serbia.png" alt="Serbia flag"></div>
+                                    <h5>Serbia</h5>
+                                </div>
+                            </th>
+                            <th>                            
+                                <div class="flagcontainer">
+                                    <div class="flaghover"><img src="../Images/flags/007-switzerland.png" alt="Switzerland flag"></div>
+                                    <h5>Switzerland</h5>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>                            
+                                <div class="flagcontainer">
+                                    <div class="flaghover"><img src="../Images/flags/008-portugal.png" alt="Portugal flag"></div>
+                                    <h5>Portugal</h5>
+                                </div>
+                            </th>
+                            <th>                            
+                                <div class="flagcontainer">
+                                    <div class="flaghover"><img src="../Images/flags/030-ghana.png" alt="Ghana flag"></div>
+                                    <h5>Ghana</h5>
+                                </div>
+                            </th>
+                            <th>                            
+                                <div class="flagcontainer">
+                                    <div class="flaghover"><img src="../Images/flags/031-uruguay.png" alt="Uruguay flag"></div>
+                                    <h5>Uruguay</h5>
+                                </div>
+                            </th>
+                            <th>                            
+                                <div class="flagcontainer">
+                                    <div class="flaghover"><img src="../Images/flags/032-south-korea.png" alt="Republic of Korea flag"></div>
+                                    <h5>Republic of Korea</h5>
+                                </div>
+                            </th>
+                        </tr>
+                    </table>
+                </section>
+
+                <div class="break"></div>
+
+                <section class="lightPurple" id="contactForm">
+                    <div>
+                        <h3>Contact Form</h3>
+                        <form name="form" onsubmit="return validateForm()" id="form1" action="server-script-url" method="post">
+                            
+                            <label for="name">Name</label><br>
+                            <input type="text" id="name" name="name" placeholder="Your name..."><br><br>
+
+                            <label for="email">Enter your email:</label><br>
+                            <input type="email" id="email" name="email" placeholder="david@example.com"><br><br>
+
+                            <label for="topic">Topic of concern:</label><br>
+                            <input type="radio" name="topic" id="tickets" value="tickets">
+                            <label for="tickets">Football Tickets</label><br>
+                            <input type="radio" name="topic" id="liveStream" value="liveStream" >
+                            <label for="liveStream"> Livestreams services</label><br>
+                            <input type="radio" name="topic" id="other" value="other">
+                            <label for="other">other...</label><br><br>
+
+                            <label for="questions">Questions?</label> <br>
+                            <textarea name="questions" id="questions" cols="30" rows="10" placeholder="Write here..."></textarea> <br>
+                            <input type="button" value="Check input" name="check" id="check" onclick="chec()">
+                            <p id="len"></p><br><br>
+                            
+                            <input type="button" value="Change background" onclick="color()"><br><br>
+
+                            <p>Top 3 countries in the world cup</p>
+                            <input type="checkbox" id="c1" name="c1" value="Argentina">
+                            <label for="c1">Argentina</label><br>
+                            <input type="checkbox" id="c2" name="c2" value="Brazil">
+                            <label for="c2">Brazil</label><br>
+                            <input type="checkbox" id="c3" name="c3" value="Germany">
+                            <label for="c2">Germany</label><br>
+                            <input type="checkbox" id="c4" name="c4" value="France">
+                            <label for="c4">France</label><br>
+                            <input type="checkbox" id="c5" name="c5" value="England" onclick="red()">
+                            <label for="c5" id="c51">England</label><br>
+                            <p id="eng"></p>
+                            <input type="checkbox" id="c6" name="c6" value="Spain">
+                            <label for="c6">Spain</label><br>
+                            <input type="checkbox" id="c7" name="c7" value="Portugal">
+                            <label for="c7">Portugal</label><br><br>
+
+                            <label for="goldenboot">Who is most likely to win goldenboot?</label><br>
+                            <select name="goldenboot" id="goldenboot">
+                                <option value="messi">Messi</option>
+                                <option value="mbappe">Mbappe</option>
+                                <option value="harryKane">Harry Kane</option>
+                                <option value="ronaldo">Cristiano Ronaldo</option>
+                                <option value="neymar">Neymar</option>
+                                <option value="giroud">Giroud</option>
+                                <option value="gakpo">Gakpo</option>
+                            </select><br><br>
+
+                            <input type="number" name="age" min="0" max="100" value="18" required placeholder="Age"> <br><br>
+                            
+                            <input id="submit" type="submit" value="submit"><br> <br>
+                        </form>
+                    </div>
+                </section>
+            </section>
+            
+            <footer>
+                <div class="socialBreak">
+                    <a class="twitter" href="https://twitter.com/FIFAcom"><img  src="../Images/001-twitter.png" alt="FIFA Twitter logo"></a>
+                    <a href="https://www.facebook.com/fifa"><img src="../Images/002-facebook-app-symbol.png" alt="FIFA Facebook logo"></a>
+                    <a href="https://www.instagram.com/fifaworldcup"><img src="../Images/004-instagram.png" alt="FIFA Instagram logo"></a>
+                    <a href="https://www.youtube.com/FIFATV"><img src="../Images/005-youtube.png" alt="FIFA Youtube logo"></a>
+                    <a href="https://www.tiktok.com/@fifaworldcup"><img src="../Images/003-tiktok.png" alt="FIFA Tiktok logo"></a>
+                </div>
+                
+                <div class="footer">
+                    <div class="details">
+                        <h4>Contact details</h4>
+                        <ul>
+                            <li> FIFAcontact@FIFA.com</li>
+                            <li> Copyright © 1994 - 2022 FIFA. All rights reserved.</li>
+                        </ul>
+                    </div>
+                    <div class="sources">
+                        <h4>Sources from:</h4>
+                        <ul>
+                            <li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022">FIFA.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </footer>
+        </div> 
+
+        <script src="../JavaScript/main.js"></script>
+    </body>
+</html>

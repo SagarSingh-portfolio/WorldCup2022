@@ -1,0 +1,188 @@
+<!--
+    Name: Sagar Singh
+    Student Number: c22731795
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+        <title>FIFA World Cup One-stop Website</title>
+    </head>
+
+    <body onscroll="moveY()">
+        <div id="main">
+            <header>
+                <nav class="pinned"  id="FIFAstore">
+                    <ul>
+                        <li><a href="#index">FIFA WORLD CUP 2022</a></li>
+                        <li class="floatright"><a href="#index"> EN </a></li>
+                        <li class="floatright"><a href="Fifa.com/store">FIFA Store</a></li>
+                    </ul>   
+                </nav>
+
+                <nav>
+                    <ul class="nav nav-pills">
+                        <li>
+                            <img class="fifaLogo" src="../Images/FIFA-logo.png" alt="FIFA logo">
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../html/countriesAndPlayers.html">Countries and Players</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/matches.html">Matches</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/results.html">Results</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/predictions.html">Predictions</a>
+                        </li>
+                  </ul>
+                </nav>
+
+            </header>
+
+            <div class="title"><h3>Countries and Players</h3></div>
+
+            <div class="padTop">
+                <section class="content">
+                    <section id="select" class="darkPurple">
+                        <div id="countrySelector" >
+                            <button onclick="drop()" id="countryButton" value="OFF"> Select Country</button>
+                            <div id="dropList" class="dropList" style="height:0;">
+                                <option onclick="flagMove(), setTimeout(()=>{country(0)}, 600), flagReset()" value="Argentina">Argentina</option>
+                                <option onclick="flagMove(), setTimeout(()=>{country(1)}, 600), flagReset()" value="Australia">Australia</option>
+                                <option onclick="flagMove(), setTimeout(()=>{country(2)}, 600), flagReset()" value="Belgium">Belgium</option>
+                                <option onclick="flagMove(), setTimeout(()=>{country(3)}, 600), flagReset()" value="Brazil">Brazil</option>
+                                <option onclick="flagMove(), setTimeout(()=>{country(4)}, 600), flagReset()" value="Cameroon">Cameroon</option>
+                                <option onclick="flagMove(), setTimeout(()=>{country(5)}, 600), flagReset()" value="Canada">Canada</option>
+                                <option onclick="flagMove(), setTimeout(()=>{country(6)}, 600), flagReset()" value="Costa Rica">Costa Rica</option>
+                                <option onclick="flagMove(), setTimeout(()=>{country(17)}, 600), flagReset()" value="Croatia">Croatia</option>
+                                <option onclick="flagMove(), setTimeout(()=>{country(7)}, 600), flagReset()" value="Denmark">Denmark</option>
+                                <option onclick="flagMove(), setTimeout(()=>{country(8)}, 600), flagReset()" value="Ecuador">Ecuador</option>
+                                <option onclick="flagMove(), setTimeout(()=>{country(9)}, 600), flagReset()" value="England">England</option>
+                                <option onclick="flagMove(), setTimeout(()=>{country(10)}, 600), flagReset()" value="France">France</option>
+                                <option onclick="flagMove(), setTimeout(()=>{country(11)}, 600), flagReset()" value="Germany">Germany</option>
+                                <option onclick="flagMove(), setTimeout(()=>{country(12)}, 600), flagReset()" value="Ghana">Ghana</option>
+                                <option onclick="flagMove(), setTimeout(()=>{country(13)}, 600), flagReset()" value="Iran">Iran</option>
+                                <option onclick="flagMove(), setTimeout(()=>{country(14)}, 600), flagReset()" value="Japan">Japan</option>
+                                <option onclick="flagMove(), setTimeout(()=>{country(15)}, 600), flagReset()" value="Mexico">Mexico</option>
+                                <option onclick="flagMove(), setTimeout(()=>{country(16)}, 600), flagReset()" value="Morocco">Morocco</option>
+                                <option onclick="flagMove(), setTimeout(()=>{country(18)}, 600), flagReset()" value="Netherlands">Netherlands</option>
+                                <option onclick="flagMove(), setTimeout(()=>{country(19)}, 600), flagReset()" value="Poland">Poland</option>
+                                <option onclick="flagMove(), setTimeout(()=>{country(20)}, 600), flagReset()" value="Portugal">Portugal</option>
+                                <option onclick="flagMove(), setTimeout(()=>{country(21)}, 600), flagReset()" value="Qatar">Qatar</option>
+                                <option onclick="flagMove(), setTimeout(()=>{country(22)}, 600), flagReset()" value="Republic of Korea">Republic of Korea</option>
+                                <option onclick="flagMove(), setTimeout(()=>{country(23)}, 600), flagReset()" value="Saudi Arabia">Saudi Arabia</option>
+                                <option onclick="flagMove(), setTimeout(()=>{country(24)}, 600), flagReset()" value="Senegal">Senegal</option>
+                                <option onclick="flagMove(), setTimeout(()=>{country(25)}, 600), flagReset()" value="Serbia">Serbia</option> 
+                                <option onclick="flagMove(), setTimeout(()=>{country(26)}, 600), flagReset()" value="Spain">Spain</option>
+                                <option onclick="flagMove(), setTimeout(()=>{country(27)}, 600), flagReset()" value="Switzerland">Switzerland</option>
+                                <option onclick="flagMove(), setTimeout(()=>{country(28)}, 600), flagReset()" value="Tunisia">Tunisia</option>
+                                <option onclick="flagMove(), setTimeout(()=>{country(29)}, 600), flagReset()" value="Uruguay">Uruguay</option>
+                                <option onclick="flagMove(), setTimeout(()=>{country(30)}, 600), flagReset()" value="USA">USA</option>
+                                <option onclick="flagMove(), setTimeout(()=>{country(31)}, 600), flagReset()" value="Wales">Wales</option>
+                            </div>
+                        </div>
+                        <div class="selectedCountry" id="selCountry">
+                            <h3>Country</h3>    
+                            <img id="selectImg" src="../Images/flags/010-argentina.png" alt="Argentina flag">
+                            <h4 id="selectName">Argentina</h4>
+                        </div>
+                    </section>
+                    
+                    <div class="break"></div>
+
+                    <section  id="teamData" class="lightPurple">
+                        
+                        <div id="bgCountry"> 
+                            <div id="bgCountry1"><h1 id="bgName1">Argentina</h1></div>
+                            <div id="bgCountry2"><h1 id="bgName2">Argentina</h1></div>
+                            <div id="bgCountry3"><h1 id="bgName3">Argentina</h1></div>
+                            <div id="bgCountry11"><h1 id="bgName11">Argentina</h1></div>
+                            <div id="bgCountry22"><h1 id="bgName22">Argentina</h1></div>
+                            <div id="bgCountry33"><h1 id="bgName33">Argentina</h1></div>
+                        </div>
+                        
+                        <h4 id="teamName">Argentina</h4>
+                        <div class="teamData1"><img id="teamForm" src="../Images/formarg.png" alt="Team formation"></div>
+                        
+                        <div class="teamData2">
+                            <table>
+                                <tr>
+                                    <th>
+                                        Country
+                                    </th>
+                                    <th>
+                                        W 
+                                    </th>
+                                    <th>D</th>
+                                    <th>L</th>
+                                    <th>GP</th>
+                                    <th>GF</th>
+                                    <th>GA</th>
+                                    <th>GD</th>
+                                </tr>
+                                <tr>
+                                    <td id="tableCountry">Argentina</td>
+                                    <td id="win">3</td>
+                                    <td id="draw">0</td>
+                                    <td id="loss">1</td>
+                                    <td id="GP">4</td>
+                                    <td id="for">5</td>
+                                    <td id="against">2</td>
+                                    <td id="diff">3</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="teamList">
+                            <div>
+                                <h5> Manager: </h5>
+                                <h5 id="manager"> Lionel Scaloni</h5>
+                            </div>
+                            <img id="teamList" src="../Images/listarg.png" alt="Countries list of players">
+                        </div>
+                        
+                    </section>
+                </section>
+            </div>
+            
+            <footer>
+                <div class="socialBreak">
+                    <a class="twitter" href="https://twitter.com/FIFAcom"><img src="../Images/001-twitter.png" alt="FIFA Twitter logo"></a>
+                    <a href="https://www.facebook.com/fifa"><img src="../Images/002-facebook-app-symbol.png" alt="FIFA Facebook logo"></a>
+                    <a href="https://www.instagram.com/fifaworldcup"><img src="../Images/004-instagram.png" alt="FIFA Instagram logo"></a>
+                    <a href="https://www.youtube.com/FIFATV"><img src="../Images/005-youtube.png" alt="FIFA Youtube logo"></a>
+                    <a href="https://www.tiktok.com/@fifaworldcup"><img src="../Images/003-tiktok.png" alt="FIFA Tiktok logo"></a>
+                </div>
+                
+                <div class="footer">
+                    <div class="details">
+                        <h4>Contact details</h4>
+                        <ul>
+                            <li> FIFAcontact@FIFA.com</li>
+                            <li> Copyright © 1994 - 2022 FIFA. All rights reserved.</li>
+                        </ul>
+                    </div>
+                    <div class="sources">
+                        <h4>Sources from:</h4>
+                        <ul>
+                            <li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022">FIFA.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </footer>
+        </div> 
+
+        <script src="../JavaScript/main.js"></script>
+    </body>
+</html>

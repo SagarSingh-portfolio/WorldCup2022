@@ -1,0 +1,1656 @@
+body {
+    overflow-x: hidden;
+}
+
+#main {
+    margin: -1%;
+    background-color: #000000;
+    opacity: 1;
+    background: repeating-linear-gradient( -45deg, #7c24c9, #7c24c9 7px, #000000 7px, #000000 50px );
+}
+
+header {
+    position: fixed;
+    top: 0%;
+    width: 101%;
+    z-index: 10;
+    box-shadow: 0px 15px 40px rgb(15, 12, 12);
+}
+
+#FIFAstore ul {
+    margin: 0%;
+    padding: 0%;
+    list-style-type: none;
+    overflow: hidden;
+    background-image: linear-gradient(to right, rgb(75, 10, 61) , rgb(128, 19, 168))
+}
+
+#FIFAstore ul li {
+    float: left;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    font-size: calc(8px + 0.2vw);
+    border-left: 3px solid black;
+}
+
+#FIFAstore ul li:nth-child(1) {
+    border-left: none;
+    margin: 0px 10px;
+    padding-left: 3vw;
+}
+
+#FIFAstore ul li:nth-child(2) {
+    float: right;
+}
+
+#FIFAstore ul li:nth-child(3) {
+    float: right;
+}
+
+#FIFAstore ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.5vw 1vw;
+    text-decoration: none;
+}
+
+#FIFAstore ul li:nth-child(3):hover {
+    background-color: rgb(0, 0, 0);
+}
+
+#FIFAstore ul li:nth-child(2):hover {
+    background-color: rgb(0, 0, 0);
+}
+
+#FIFAstore ul li:nth-child(3):hover a {
+    color: rgb(206, 167, 38);
+}
+
+#FIFAstore ul li:nth-child(2):hover a {
+    color: rgb(206, 167, 38);
+}
+
+.nav {
+    padding-left: 15%;
+    background-image: linear-gradient(to right,#55198a , rgb(0, 0, 0))
+}
+
+.fifaLogo {
+    position: absolute;
+    padding-top: calc(5px + 0.2vw);
+    margin-left: -14%;
+    width: calc(30px + 1.9vw);
+    min-width: 40px;
+    filter: invert(100%);
+}
+
+.nav li {
+    padding-left: 2%;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    font-size: calc(8px + 0.5vw);
+}
+
+.nav-item a {
+    color: white;
+}
+
+.nav-item a:hover {
+    color: rgb(206, 167, 38);
+}
+
+.active:hover {
+    background-color: rgb(18, 102, 43);
+    color: blue;
+}/**/
+
+#imageslide {
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: auto;
+    padding-top: calc(50px + 3.0vw);
+}
+
+.headerimages {
+    display: none;
+    position: relative;
+}
+
+.headerimages img {
+    position: relative;
+    z-index: 4;
+    width: 100vw;
+    height: 38vw;
+    vertical-align: middle;
+    object-fit: cover;
+    object-position: 50% 20%;
+    border-bottom: 2px solid black;
+}
+
+.imgbutton {
+    text-align: center;
+    position: relative;
+    z-index: 6;
+    top: -5vh;
+}
+
+.subtitles {
+    position: absolute;
+    z-index: 6;
+    text-align: left;
+    bottom: 8%;
+    margin-left: 13%;
+    padding-left: 5%;
+    color: white;
+    text-shadow: 3px 2px 5px #000000; 
+}
+
+.subtitles h4 {
+    font-size: 1.5vw;
+}
+
+.subtitles h3 {
+    font-size: 2vw;
+}
+
+.slideno {
+    padding: 8% 12%;
+    position: absolute;
+    top: 0;
+}
+
+.headerimgno {
+    cursor: pointer;
+    max-height: 20px;
+    height: 2vw;
+    max-width: 20px;
+    width: 2vw;
+    margin: 0px 3px;
+    background-color: plum;
+    border-radius: 50%;
+    box-shadow: 4px 4px 10px black;
+    display: inline-block;
+    transition: background-color 1s ease;
+}
+
+.activebtn, .headerimgno:hover {
+    background-color: purple;
+} 
+
+.content {
+    padding: 0% 0%;
+    background-color: rgb(68, 19, 79);    margin: 0% 11%;
+    position: relative;
+    overflow-y: hidden;
+    margin-top: -1.38%;
+    box-shadow: 5px 0px 20px rgb(0, 0, 0.04),-5px 0px 20px rgb(0, 0, 0.4);
+}
+
+#welcometext {
+    text-align: center;
+    background-color: rgb(68, 19, 79);
+    margin-bottom: -0.49%;
+    padding-bottom: 3vh;
+    padding-top: 3vh;
+    color: white;
+}
+
+#welcometext h4 {
+    font-size:calc(12px + 1.1vw);
+}
+
+#welcomevideodiv {
+    background-color: rgb(68, 19, 79);
+    display: flex;
+    padding-bottom: 5vh;
+}
+
+#welcomevideodiv iframe {
+    width: 60%;
+    height: 24vw;
+    border: 2px solid black;
+    box-shadow: 0px 0px 40px rgb(166, 54, 204);
+}
+
+#welcomevideodiv div {
+    width: 20%;
+    padding: 0% 3%;
+    padding-top: 1%;
+}
+
+#welcomevideodiv div img {
+    width: 10vw;
+}
+
+#introwc {
+    background-color: rgb(22, 6, 26);
+}
+
+#introwc h4 {
+    text-align: center;
+    padding-top: 3vh;
+    color: white;
+    padding-bottom: 2vh;
+    font-size:calc(12px + 1.1vw);
+
+}
+
+#introwctextimage {
+    margin-left: 10px;
+    padding-bottom: 4vh;
+    display: block;
+}
+
+#introwctextimage p {
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+    padding-left: 3vw;
+    /*padding-right: 4vw;*/
+    width: 65%;
+    color: white;
+    font-size:calc(8px + 0.5vw);
+}
+
+#introwctextimage img {
+    display: inline-block;
+    float: right;
+    top: 7vh;
+    width: 30%;
+    margin-left: 3.88%;
+    border-style: solid;
+    border-right: 0.5px;
+    border-color: black;
+}
+
+.break {
+    height:2vh;
+    background-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 1px 2px;
+    border-color: black;
+}
+
+#flaglistloop {
+    min-height: 65px;
+    height: 12vw;
+    max-height: 180px;
+    background-color: rgb(101, 30, 117);
+    padding-bottom: 12%;
+    overflow: hidden;
+    box-shadow: 0px 8px 15px rgb(22, 6, 26) inset;
+}
+
+#flaglistloop div {
+    display: flex;
+    position: relative;
+    vertical-align: middle;
+    animation-name: flaglistmove;
+    animation-timing-function: linear;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flaglistmove {
+    0% { right:0%;}
+    100% {right:355%;}
+}
+
+#flaglistloop div img {
+    padding-left: 0.83vw;
+    padding-right: 1vw;
+    max-height: 10vw;
+}
+
+#stadiums {
+    margin-top: -3.65%;
+    text-align:justify;
+    padding-top: 3vh;
+    padding-bottom: 0vh;
+    background-color: rgb(22, 6, 26);
+}
+
+#stadiums p {
+    color: white;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    font-size: calc(8px + 0.5vw);
+}
+
+#stadiums h4 {
+    color: white;
+    text-align: center;
+    padding-bottom: 1vh;
+    font-size: calc(12px + 1vw);
+}
+
+.rowstadium1 {
+    display: flex;
+    background-color: rgb(22, 6, 26); 
+}
+
+.rowstadium1 div {
+    height: 15vw;
+}
+
+.rowstadium1 div:nth-child(1) {
+    width: 38%;
+    color: white;
+    text-align: center;
+    padding-top: 4vw;
+}
+
+.rowstadium1 div:nth-child(2) {
+    width: 2%;
+    background-color:rgb(65, 11, 67);
+    box-shadow: -15px 0px 40px rgb(166, 54, 204);
+}
+
+.rowstadium1 div:nth-child(3) {
+    width: 60%;
+}
+
+.rowstadium1 div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 50%;
+}
+
+.rowstadium2 div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 42%;
+}
+
+.rowstadium2 {
+    display: flex;
+    background-color: rgb(22, 6, 26); 
+}
+
+.rowstadium2 div {
+    height: 15vw;
+    overflow: hidden;
+}
+
+.rowstadium2 div:nth-child(3) {
+    width: 38%;
+    color: white;
+    text-align: center;
+    padding-top: 4vw;
+}
+
+.rowstadium2 div:nth-child(2) {
+    width: 2%;
+    background-color: rgb(65, 11, 67);
+    box-shadow: 15px 0px 40px rgb(166, 54, 204);
+
+}
+
+.rowstadium2 div:nth-child(1) {
+    width: 60%;
+}
+
+.rowstadium1 div img {
+    max-height: 175.4%;
+    max-width: 100%;
+}
+
+.rowstadium2 div img {
+    max-height: 175.4%;
+    max-width: 100%;
+}
+
+#stadiums div div h4 {
+    color: rgba(213, 198, 198, 0.447);
+}
+
+#stadiums div div h3 {
+    font-size: calc(4px + 1.4vw);
+}
+
+#stadiums div div h4 {
+    font-size: calc(4px + 1.2vw);
+}
+
+#introwebsite {
+    text-align: center;
+    background-color: rgb(68, 19, 79);
+    color: white;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+#introwebsite h4 {
+    padding-bottom: 1vh;
+    font-size: calc(12px + 1.1vw);
+}
+
+#introwebsite p {
+    text-align: justify;
+    color: white;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    font-size: calc(8px + 0.5vw)
+}
+
+#countriesplaying {
+    text-align: center;
+    background-color: rgb(22, 6, 26);
+}
+
+#countriesplaying h4 {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    color: white;
+    font-size: calc(12px + 1.1vw);
+
+}
+
+#worldmap {
+    width: 90%;
+    height: 100%;
+    padding-bottom: 0vh;
+    filter:contrast(70%);
+    border-radius: 20px;
+    border: 5px solid rgb(61, 21, 85);
+}
+
+#countriesplaying div {
+    padding-bottom: 3vh;
+}
+
+#countryflags {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(68, 19, 79);
+}
+
+.flagcontainer {
+    padding-top: 10%;
+}   
+
+.flaghover {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 4.3vw;
+    width:fit-content;
+    margin-bottom: 10%;
+    transition: all 0.4s ease-in-out;
+    transform: scale(1.8);
+}
+
+.flagcontainer:hover .flaghover{
+    box-shadow: 9px 12px 6px rgba(0, 0, 0, 0.432);
+    transform: scale(2)
+}
+
+.flaghover img {
+    position: relative;
+    height: 6.6vw;
+    top: -1.2vw;
+}
+
+.france {
+    width: 6.4vw;
+}
+
+.flagcontainer h5 {
+    color: white;
+    padding-top: 0;
+    margin-bottom: 0.5vh;
+    position: relative;
+    margin-top: 0vh;
+    transition: all 0.4s ease-in-out;
+    font-size: calc(8px + 0.9vw);
+
+}
+
+.flagcontainer:hover h5{
+    transform: translate(0%, 100%);
+}
+
+.socialBreak {
+    display: flex;
+    background-color: rgb(98, 78, 102);
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    padding-left: 1vw;
+    border-bottom: 1px solid rgb(179, 100, 211);
+}
+
+.socialBreak a {
+    padding-right: calc(10px + 1vw);
+}
+
+.socialBreak a img {
+    width: 1.6vw;
+    min-width: 20px;
+    filter: brightness(0%);
+}
+
+.socialBreak a img:hover {
+    filter: invert(1);
+}
+
+.socialBreak a:nth-child(4) img {
+    filter: grayscale(100%);
+    transform: scale(1.3);
+}
+
+.socialBreak a:nth-child(4) img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.3);
+}
+
+.socialBreak a:nth-child(1) {
+    padding-left: 12%;
+}
+
+.socialBreak a:nth-child(1) img:hover {
+    filter: brightness(1000);
+}
+
+.footer {
+    display: flex;
+    background-color: rgb(98, 78, 102);
+    color: white;
+}
+
+.footer div ul {
+    list-style: none;
+    padding-left: 10%;
+}
+
+.footer div h4 {
+    font-size: 1.5vw;
+
+}
+
+.details {
+    width: 50%;
+    padding: 1% 10%;
+}
+
+.details h4 {
+    padding-left: 1.5vw;
+    font-size: calc(12px + 1.1vw);
+}
+
+.details li {
+    font-size: 1vw;
+}
+
+.sources a {
+    color: rgb(179, 100, 211);
+    text-decoration: none;
+    font-size: 1vw;   
+}
+
+.sources h4 {
+    font-size: calc(12px + 1.1vw);
+    margin-bottom: 0px;
+}
+
+/* countries and players html */
+.padTop {
+    position: relative;
+    padding-top: 0vw;
+    padding-bottom: 1%;
+}
+
+.padBot {
+    margin-bottom: 0%;
+}
+
+.darkPurple {
+    background-color: rgb(22, 6, 26);
+}
+
+.lightPurple {
+    background-color: rgb(68, 19, 79);    
+}
+
+.title {
+    background-color: rgb(100, 12, 122);
+    margin-top: calc(40px + 3vw);
+    padding-top: 3%;
+    text-align: center;
+}
+
+.title h3 {
+    position: relative;
+    padding-bottom: 3%;
+    margin-bottom: 1.5%;
+    color: white;
+}
+
+#select {
+    overflow: hidden;
+    height: calc(80px + 17vw);
+}
+
+#countrySelector {
+    height: fit-content;
+    color: white;
+    padding: 0% 0%;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-bottom: 10%;
+    position: relative;
+    display: inline-block;
+    transform: scale(1.5);
+}
+
+#countrySelector button {
+    height: calc(8px + 2vw);
+    width: calc(60px + 5vw);
+    border-radius: 5em;
+    border: 2px solid white;
+    background-color:#4b1976;
+    color: white;
+    font-weight: 600;
+    font-size: calc(5px + 0.5vw);
+    transition: 0.3s border-radius;
+}
+
+#countrySelector button:hover {
+    background-color: #671fa5;
+    color: gold;
+    border: 2px solid rgb(204, 170, 57);
+}
+
+#countrySelector button:active {
+    color: white;
+    border: 3px solid white;
+}
+
+.dropList {
+    display: block;
+    position: absolute;
+    color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: calc(60px + 5vw);
+    transition: height 0.4s ease;
+    /*transition-delay: 0.3s;*/
+}
+
+.dropList::-webkit-scrollbar {
+    width: 0.5vw;
+    background-color: #380e5c;
+}
+
+.dropList::-webkit-scrollbar-track {
+    background-color:#4b1976;
+    border-radius: 1000px;
+}
+
+.dropList::-webkit-scrollbar-thumb {
+    background: white;
+}
+
+.dropList::-webkit-scrollbar-thumb:hover {
+    background: rgb(203, 174, 8);
+}
+
+option {
+    text-align: center;
+    background-color: #380e5c;
+    font-size: calc(5px + 0.5vw);
+}
+
+option:hover {
+    background-color: #55198a;
+    color: rgb(203, 174, 8);
+    font-weight: 600;
+}
+
+.selectedCountry {
+    position: relative;
+    float: right;
+    padding-right: 20%;
+    transform: scale(1.5);
+    padding-top: 5%;
+    color: white;
+    text-align: center;
+}
+
+.selectedCountry h3 {
+    font-size: calc(9px + 1.2vw);
+}
+
+.selectedCountry img {
+    height: calc(50px + 5vw);
+}
+
+.selectedCountry h4 {
+    font-size: calc(7px + 1.1vw);
+}
+
+#selectName {
+    color: rgb(255, 170, 0);
+}
+
+#selectImg, #selectName {
+    position: relative;
+    animation-timing-function: ease-out;
+    animation-duration: 1.3s;
+    top: -2vh;
+}
+
+@keyframes flagMove {
+    0% {left: 0;}
+    45% {left: 400%;}
+    55% {left: 400%;}
+    100% {left: 0%;}
+}
+
+#teamData {
+    color: rgb(255, 170, 0);
+    padding-top: 3vw;
+    padding-left: 15vw;
+    padding-bottom: 2vw; 
+    overflow: hidden;
+    position: relative;
+    animation-timing-function: ease-out;
+    animation-duration: 1.3s;
+}
+
+@keyframes contentMove {
+    0% {left: 0vw;}
+    45% {left: -100vw;}
+    55% {left: -100vw;}
+    100% {left: 0vw;}
+}
+
+#teamData h4{
+    border: 1px solid white;
+    text-align: center;
+    width: 30%;
+    padding-top: 0.5vw;
+    padding-bottom: 0.8vw;
+    background-color: #461670;
+}
+
+#teamName {
+    position: relative;
+    z-index: 3;
+    font-size: calc(7px + 1.1vw);
+}
+
+.teamData1 {
+    position: relative;
+    margin-top: 2%;
+    border-radius: 30px;
+    height: 35vw;
+    width: fit-content;
+    z-index: 3;
+}
+
+#teamForm {
+    position: relative;
+    border-radius: 30px;
+    height: 35vw;
+    border: 3px solid rgba(255, 255, 255, 0.992);
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 40px rgb(166, 54, 204);
+}
+
+.teamData2 {
+    padding-top: 2%;
+    padding-bottom: 5%;
+    margin-left: 10%;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+.teamData2 table {
+    width: calc(120px + 15vw);
+    border: 1px solid white;
+    font-size: calc(6px + 0.7vw);
+}
+
+.teamData2 table tr {
+    border: 1px solid white;
+}
+
+.teamData2 table tr th {
+    margin-right: 60%;
+    background-color: rgb(116, 60, 128);
+}
+
+.teamData2 td {
+    color: white;
+    background-color: rgb(43, 13, 50);
+}
+
+.teamList {
+    position: relative;
+    margin-left: -23.5%;
+    padding: 0;
+}
+
+#teamList {
+    display: block;
+    position: relative;
+    border: 2px solid white;
+    z-index: 3;
+    height: calc(350px + 25vw);
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.teamList div {
+    display: flex;
+    border: 2px solid white;
+    border-bottom: 0px;
+    width: calc(250px + 6vw);
+    padding-left: 3%;
+    padding-top: 0.5vw;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px 20px 0px 0px;
+    position: relative;
+    z-index: 4;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.teamList div h5 {
+    padding-right: 3%;
+    font-size: calc(12px + 0.5vw);
+}
+
+#manager {
+    color: white;
+}
+
+#bgCountry {
+    width: auto;
+    position: relative;
+}
+
+#bgCountry1 {
+    position: absolute;
+    width: 100vw;
+    margin-left: -28%;
+    margin-right: auto;
+    z-index: 2;
+    margin-top: -5vw;
+    text-align: left;
+}
+
+#bgCountry1 h1 {
+    font-size: 23vw;
+    font-weight: 500;
+    font-family:Impact;
+    font-stretch: 150%;
+    letter-spacing: 0.5vw;
+    color: rgba(246, 245, 244, 0.249);
+}
+
+#bgCountry2 {
+    position: absolute;
+    width: 100vw;
+    margin-left: -35%;
+    text-align: center;
+    z-index: 2;
+    margin-top: 25vw;
+}
+
+#bgCountry2 h1 {
+    font-size: 23vw;
+    font-weight: 500;
+    font-family:Impact;
+    font-stretch: 150%;
+    letter-spacing: 0.5vw;
+    color: rgba(246, 245, 244, 0.249);
+    text-align: center;
+}
+
+#bgCountry3 {
+    position: absolute;
+    width: 100vw;
+    margin-left: -45%;
+    margin-right: auto;
+    z-index: 2;
+    margin-top: 55vw;
+    text-align: right;
+}
+
+#bgCountry3 h1 {
+    font-size: 23vw;
+    font-weight: 500;
+    font-family:Impact;
+    font-stretch: 150%;
+    letter-spacing: 0.5vw;
+    color: rgba(246, 245, 244, 0.249);
+    text-align: right;
+}
+
+#bgCountry11 {
+    position: absolute;
+    width: 100vw;
+    margin-left: -28%;
+    margin-right: auto;
+    z-index: 2;
+    margin-top: 85vw;
+    text-align: left;
+}
+
+#bgCountry11 h1 {
+    font-size: 23vw;
+    font-weight: 500;
+    font-family:Impact;
+    font-stretch: 150%;
+    letter-spacing: 0.5vw;
+    color: rgba(246, 245, 244, 0.249);
+}
+
+#bgCountry22 {
+    position: absolute;
+    width: 100vw;
+    margin-left: -35%;
+    text-align: center;
+    z-index: 2;
+    margin-top: 115vw;
+}
+
+#bgCountry22 h1 {
+    font-size: 23vw;
+    font-weight: 500;
+    font-family:Impact;
+    font-stretch: 150%;
+    letter-spacing: 0.5vw;
+    color: rgba(246, 245, 244, 0.249);
+    text-align: center;
+}
+
+#bgCountry33 {
+    position: absolute;
+    width: 100vw;
+    margin-left: -45%;
+    margin-right: auto;
+    z-index: 2;
+    margin-top: 145vw;
+    text-align: right;
+}
+
+#bgCountry33 h1 {
+    font-size: 23vw;
+    font-weight: 500;
+    font-family:Impact;
+    font-stretch: 150%;
+    letter-spacing: 0.5vw;
+    color: rgba(246, 245, 244, 0.249);
+    text-align: right;
+}
+
+
+/*Matches html*/
+#matchTop {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2vw;
+    padding-bottom: 3vw;
+}
+
+#matchTop1 {
+    padding-right: 5vw;
+    text-align: center;
+}
+
+.gold {
+    color: goldenrod;
+}
+
+#matchTop2 {
+    padding-left: 5vw;
+    text-align: center;
+}
+
+#matchTop2 img {
+    width: 7vw;
+}
+
+#matchTop2 h4 {
+    color: rgba(255, 255, 255, 0.541);
+}
+
+#matchBot {
+    color: white;
+    padding-top: 2vw;
+    padding-bottom: 3vw;
+}
+
+#matchBot1 {
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.541);
+}
+
+#matchBot1 h4 {
+    padding: 0 5vw;
+    font-size: calc(10px + 1.1vw);
+}
+
+#matchBot2 {
+    display: flex;
+    padding-left: 9vw;
+    padding-top: 2vw;
+}
+
+#matchBot2 button {
+   text-align: center;
+   padding: 0.4vw 2vw;
+   margin: 0% 0.5vw;
+   background-color: #55198a;
+   color: white;
+   border-left: 2px solid white;
+   border-right: 2px solid white;
+   border-top: 2px solid rgb(102, 10, 102);
+   border-bottom: 2px solid rgb(102, 10, 102);
+   border-radius: 15px;
+   box-shadow: 0px 0px 15px #ffffff5b;
+   font-size: calc(12px + 0.5vw);
+}
+
+#matchBot2 button:hover {
+    border: 2px solid goldenrod;
+    color: goldenrod;
+    font-weight: 600;
+}
+
+.matchBot33 {
+    display: flex;
+    justify-content: center;
+}
+
+#matchBot3 div {
+    padding: 1vw 2vw;
+}
+
+.block {
+    display:block;
+    padding-top: 10vw;
+    width: 30%;
+    background-color: rgba(123, 120, 120, 0.386);
+    border-radius: 15px 0px 0px 15px;
+}
+
+.block h5 {
+    padding-top: 0.5vw;
+    color: rgba(255, 255, 255, 0.653);
+    font-size: calc(8px + 0.7vw);
+}
+
+.block h5:nth-child(1) {
+    color: white;
+}
+
+.flex {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 50%;
+    background-color: rgba(89, 88, 88, 0.447);
+    border-radius: 0px 15px 15px 0px;
+}
+
+.flex h4, .flex h3, .flex img {
+    padding: 0% 1vw;
+}
+
+.flex h3 {
+    padding: 0% 0vw;
+    filter: blur(6px);
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    width: 10vw;
+    white-space: nowrap;
+    font-size: calc(5px + 1.2vw);
+}
+
+.flex img {
+    height: 5vw;
+}
+
+.flex h4 {
+    flex-wrap: wrap;
+    width: 100vw;
+    text-align: center;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-size: calc(5px + 1vw);
+}
+
+.flex:active > h3 {
+    filter: blur(0px);
+    color: goldenrod;
+}
+
+.knockout h5 {
+    filter: blur(0);
+}
+
+.r1 {
+    display: flex;
+}
+
+.r2 {
+    display: none;
+}
+
+.r3 {
+    display: none;
+}
+
+.knockout {
+    display: none;
+}
+
+.knockout h4 {
+    font-size: calc(14px + 1.2vw);
+}
+
+/*Results html*/
+#redirectMatch div{
+    text-align: center;
+    padding: 1vw 0;
+}
+
+#redirectMatch div a{
+    font-size: calc(8px + 0.8vw);
+    font-weight: 600;
+    color: goldenrod;
+}
+
+#redirectMatch div a:hover{
+    color: white;
+}
+
+.groupTables h4 {
+    text-align: center;
+    color: goldenrod;
+    padding: 1vw 0%;
+    background-color: rgba(128, 128, 128, 0.433);
+    font-size: calc(8px + 0.9vw);
+}
+
+.groupTables {
+    padding-bottom: 2vw;
+}
+
+.groupTables h2 {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.727);
+    font-size: calc(10px + 1.6vw);
+}
+
+.groupTables table {
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    border: 1px solid white;
+    width: 60%;
+    text-align: center;
+}
+
+.groupTables table tr {
+    height: 2vw;
+}
+
+.groupTables table tr:nth-child(1){
+    border: 1px solid white;
+    color: goldenrod;
+    background-color:#55198a;
+}
+
+.groupTables table tr th:nth-child(2), .groupTables table tr td:nth-child(2) {
+    text-align: left;
+    font-weight: 600;
+}
+
+.groupTables table tr:nth-child(3), .groupTables table tr:nth-child(5) {
+    background-color: rgba(128, 128, 128, 0.148);
+} 
+
+.groupTables table tr td:nth-child(9) {
+    border-left: 1px solid white;
+    color: rgba(255, 0, 0, 0);
+}
+
+.win {
+    background-color: rgba(52, 224, 22, 0.603);
+}
+
+.loss {
+    background-color: rgb(128, 128, 128);
+}
+
+.bracket {
+    padding: 2vw 0vw;
+    text-align: center;
+    color: white;
+}
+
+.bracket img {
+    height: 19vw;
+    position: relative;
+    padding: 0%;
+    margin: 0%;
+    border:3px solid  white;
+    border-radius: 15px;
+}
+
+.bracket h2 {
+    font-size: calc(12px + 1.2vw);
+}
+
+
+/* Predictions html */
+#predictions div {
+    display: block;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#predictions div div a{
+    color: goldenrod;
+    font-weight: 600;
+    font-size: calc(8px + 0.7vw);
+    padding-right: 2vw;
+    padding-bottom: 1vw;
+}
+
+#predictions div div a:hover{
+    color: white;
+}
+
+#predictions div div{
+    position: relative;
+    padding-top: 3vw;
+}
+
+.cafu {
+    padding-bottom: 3vw;
+}
+
+.predImg img {
+    border: 2px solid white;
+    border-radius: 15px;
+    position: relative;
+    height:43vw;
+    max-height: 600px;
+}
+
+.cafu img, .samuel img {
+    position: relative;
+    height: 50vw;
+    max-height: none;
+}
+
+.cafu h3, .samuel h3 {
+    font-size: calc(8px + 0.6vw);
+}
+
+.bra:nth-child(2) img{
+    border: 2px solid black;  
+    height: 37vw;
+    max-height: 600px;  
+}
+
+.predVid iframe {
+    height: 35vw;
+    max-width: 100%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 60px rgb(183, 29, 183);
+}
+
+.predVid a img {
+    height: 35vw;
+    border: 3px solid white;
+    border-radius: 20px;
+}
+
+.predList p {
+    font-size: calc(4px + 0.6vw);
+}
+
+.predList ol {
+    border: 1px solid white;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #461670;
+    font-size: calc(8px + 1vw);
+    padding-left: 3.8vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-right: 1vw;
+    position: relative;
+    z-index: 4;
+}
+
+#rating {
+    position: relative;
+}
+
+.rating {
+    width: 80%;
+    padding: 3vw 0vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+}
+
+.rating div h2 {
+    font-size: calc(10px + 0.7vw);
+    color: goldenrod;
+}
+
+.rating div ol {
+    border: 1px solid white;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #461670;
+    font-size: calc(8px + 1vw);
+    padding-left: 6vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-right: 1vw;
+    position: relative;
+    z-index: 4;
+}
+
+#predTr{
+    position: absolute;
+    margin-left: -25%;
+    margin-top: -50%;
+    height: 40vw;
+    filter: blur(5px);
+}
+
+#potWin h2 {
+    font-size: calc(12px + 0.7vw);
+    color: goldenrod;
+    position: relative;
+    padding-top: 2vw;
+}
+
+#potwin div h3 {
+    font-size: calc(8px + 0.6vw);
+}
+
+#potWin div {
+    width: 80%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.475);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#potWin p {
+    text-align: justify;
+    font-size: calc(7px + 0.6vw);
+}
+
+#predWinners {
+    background-color: #380e5c;
+    color: white;
+    text-align: center;
+    padding-bottom: 3vw;
+}
+
+#predWinners h1 {
+    color: goldenrod;
+    font-size: calc(13px + 1vw);
+    text-shadow: 2px 1px 5px rgba(0, 0, 0, 0.468);
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+    text-decoration: underline;
+}
+
+#predWinners img {
+    height: 40vw;
+    position: relative;
+    box-shadow: 10px 10px goldenrod;
+}
+
+#contactForm div {
+ color: white;
+ position: relative;
+ margin-left: auto;
+ margin-right: auto;
+ padding-top: 2vw;
+ padding-bottom: 3vw;
+ background-color: #4b197675;
+ width: fit-content;
+}
+
+#contactForm h3 {
+    color: goldenrod;
+    font-size: calc(8px + 0.8vw);
+    padding-left: 1vw;
+    text-decoration: underline;
+}
+
+#form1 {
+    padding-left: 1vw;
+}
+
+#goldenboot {
+    color: white;
+    background-color: black;
+}
+
+
+
+/*Media Query*/
+/*Tablet screens and smaller*/
+@media only screen and (max-width:600px) {
+    .groupTables table {
+        width: 90%;
+    }
+    
+    .content {
+        margin: 0% 0%;
+    }
+
+    .title{
+        position: relative;
+        margin-top: 7.8%;
+    }
+
+    .flaghover {
+        height: 7vw;
+        margin-bottom: 20px;
+    }
+
+    .flaghover img {
+      height: 9.7vw;  
+    }
+    
+    .details ul li {
+        font-size: 1.8vw;
+    }
+
+    .sources ul li a {
+        font-size: 1.8vw;
+    }
+
+    .france {
+        width: 52px;
+    }
+
+    .flagcontainer h5 {
+        margin-top: 0px;
+    }
+
+    #worldmap {
+        width: 100%;
+        border-radius: 0%;
+    }
+
+    .rowstadium1 div {
+        height: 30vw;
+    }
+
+    .rowstadium2 div {
+        height: 30vw;
+    }
+
+    .rowstadium2 div:nth-child(3) {
+        padding-top: 12vw;
+    }
+
+    .rowstadium1 div:nth-child(1) {
+        padding-top: 12vw;
+    }
+
+    #imageslide {
+        margin-top: -28px;
+    }
+
+    #FIFAstore {
+        display: none;
+    }
+
+    .nav {
+        margin-left: -10%;
+    }
+
+    .nav li {
+        padding-left: 0%;
+    }
+
+    .fifaLogo {
+        display: none;
+    }
+
+    #introwctextimage img {
+        display: none;
+    }
+
+    #introwctextimage p {
+        width: 92%;
+        padding-left: 6%;
+    }
+
+    .subtitles h3 {
+        font-size: 14px;
+    }
+
+    .subtitles h4 {
+        font-size: 10px;
+    }
+
+    .remove {
+        color: rgba(0, 0, 0, 0);
+    }
+
+    .content {
+        box-shadow: none;
+        border-bottom: 1px solid rgb(164, 67, 186);
+    }
+
+    .socialBreak {
+        padding-bottom: 7px;
+        padding-left: 25%;
+    }
+
+    #welcomevideodiv iframe {
+        height: 35vw;
+    }
+
+    #welcomevideodiv div img {
+        width: 15vw;
+        opacity: 0.7;
+    }
+
+    .nav {
+        background-image: none;
+        background-color: black;
+    }
+
+    .socialBreak {
+        background-color: rgb(39, 38, 38);
+    }
+
+    .footer {
+        background-color: black;
+    }
+
+    .socialBreak a img {
+        filter:invert(1);
+    }
+
+    .twitter {
+        filter: brightness(100);
+    }
+
+    #teamForm {
+        border-radius: 10px;
+    }
+
+    #teamList {
+       margin-left: 7%; 
+    }
+
+    #matchTop1 {
+        position: relative;
+        margin-left: 10%;
+    }
+
+    #matchTop2 {
+        position: relative;
+        margin-right: 10%;
+    }
+
+    #matchBot1 {
+        color: white;
+        position: relative;
+        padding-left: 5%;
+        padding-top: 2%;
+        background-color: rgba(135, 133, 133, 0.347);
+    }
+
+    #matchBot2 {
+        position: relative;
+        margin-left: 2%;
+        padding-bottom: 3%;
+        padding-top: 3%;
+    }
+
+    #matchBot2 button {
+        box-shadow: 0px 0px;
+        border: 2px solid  white;
+    }
+
+    .matchBot33:active .flex {
+        border-top: 1px solid white;
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+    
+    .matchBot33:active .block {
+        border-top: 1px solid white;
+        border-left: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+}

@@ -1,0 +1,364 @@
+box-shadow:
+0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+0 12.5px 10px rgba(0, 0, 0, 0.06),
+0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+0 100px 80px rgba(0, 0, 0, 0.12)
+;
+
+#main {
+    background-color: blue;
+    margin: -1%;
+}
+
+header {
+    position: fixed;
+    top: 0%;
+    width: 101%;
+    z-index: 5;
+    box-shadow: 10px 10px 5px lightblue;
+}
+
+#FIFAstore ul {
+    margin: 0%;
+    padding: 0%;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: aqua;
+}
+
+#FIFAstore ul li {
+    float: left;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    font-size: small;
+    border-left: 3px solid black;
+}
+
+#FIFAstore ul li:nth-child(1) {
+    border-left: none;
+    margin: 0px 10px;
+}
+
+#FIFAstore ul li:nth-child(2) {
+    float: right;
+}
+
+#FIFAstore ul li:nth-child(3) {
+    float: right;
+}
+
+#FIFAstore ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.5vw 1vw;
+    text-decoration: none;
+}
+
+#FIFAstore ul li:nth-child(3):hover {
+    background-color: green;
+}
+
+#FIFAstore ul li:nth-child(2):hover {
+    background-color: green;
+}
+
+#navbar ul {
+    margin: 0%;
+    padding: 0%;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: green;
+}
+
+#navbar ul li {
+    float: left;
+    font-size: 100%;
+}
+
+#navbar ul li:first-child {
+    margin-left: 4%;
+}
+
+#navbar ul li a {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 1.5vh 4.55vh;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+}
+
+#imageslide {
+    width: 102%;
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: auto;
+    padding-top: 4.79%;
+}
+
+.headerimages {
+    display: none;
+}
+
+.headerimages img {
+   width: 100%;
+   height: 75vh;
+   vertical-align: middle;
+   object-fit: cover;
+   object-position: 100% 20%;
+   border-bottom: 2px solid black;
+   box-shadow: 0px 20px 30px rgb(126, 12, 111);
+}
+
+.imgbutton {
+    text-align: center;
+    position: relative;
+    top: -2vw;
+}
+
+.subtitles {
+    position: absolute;
+    text-align: left;
+    bottom: 17%;
+    margin-left: 13%;
+    padding-left: 5%;
+    width: 100%;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.slideno {
+    padding: 8% 12%;
+    position: absolute;
+    top: 0;
+}
+
+.headerimgno {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 0px 3px;
+    background-color: plum;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 1s ease;
+}
+
+.active, .headerimgno:hover {
+    background-color: purple;
+} 
+
+.content {
+    padding: 0% 0%;
+    background-color: blueviolet;
+    margin: 0% 12%;
+    position: relative;
+    margin-top: -1.38%;
+    z-index: 1;
+}
+
+#welcometext {
+    text-align: center;
+    background-color: aquamarine;
+    border-style: solid;
+    border-width: 1px 2px;
+    border-color: black;
+}
+
+#welcomevideodiv {
+    background-color: aquamarine;
+    border-style: solid;
+    border-width: 1px 2px;
+    border-color: black;
+}
+
+#introwc {
+    background-color: blanchedalmond;
+    border-style: solid;
+    border-width: 1px 2px;
+    border-color: black;
+}
+
+#introwc h4 {
+    text-align: center;
+}
+
+#introwctextimage {
+    margin-left: 10px;
+}
+
+#introwctextimage p {
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
+    background-color: brown;
+}
+
+#introwctextimage img {
+    display: inline-block;
+    width: 25%;
+    margin-left: 3.88%;
+    height: 5vh;
+    border-style: solid;
+    border-right: 0.5px;
+    border-color: black;
+}
+
+.break {
+    height:2vh;
+    background-color: red;
+    border-style: solid;
+    border-width: 1px 2px;
+    border-color: black;
+}
+
+#flaglistloop {
+    height: 9vh;
+    background-color: aqua;
+    border-style: solid;
+    border-width: 1px 2px;
+    border-color: black;
+}
+
+#stadiums {
+    background-color: beige;
+    margin-top: -3.65%;
+    border-style: solid;
+    border-width: 1px 2px;
+    border-color: black;
+    text-align: center;
+}
+
+.rowstadium1 {
+    background-color: white;
+    display: flex;
+}
+
+.rowstadium1 div {
+    height: 15vw;
+}
+
+.rowstadium1 div:nth-child(1) {
+    width: 38%;
+    border-style: solid;
+    border-width: 0%;
+    border-color: rgb(0, 0, 0);
+}
+
+.rowstadium1 div:nth-child(2) {
+    width: 2%;
+    background-color: blue;
+    border-style: solid;
+    border-width: 0%;
+    border-color: rgb(0, 0, 0);
+}
+
+.rowstadium1 div:nth-child(3) {
+    width: 60%;
+    border-style: solid;
+    border-width: 0%;
+    border-color: rgb(0, 0, 0);
+}
+
+.rowstadium2 {
+    background-color: white;
+    display: flex;
+}
+
+.rowstadium2 div {
+    height: 15vw;
+}
+
+.rowstadium2 div:nth-child(3) {
+    width: 38%;
+    border-style: solid;
+    border-width: 0%;
+    border-color: rgb(0, 0, 0);
+}
+
+.rowstadium2 div:nth-child(2) {
+    width: 2%;
+    background-color: blue;
+    border-style: solid;
+    border-width: 0%;
+    border-color: rgb(0, 0, 0);
+}
+
+.rowstadium2 div:nth-child(1) {
+    width: 60%;
+    border-style: solid;
+    border-width: 0%;
+    border-color: rgb(0, 0, 0);
+}
+
+#introwebsite {
+    text-align: center;
+    border-style: solid;
+    border-width: 0%;
+    border-color: rgb(0, 0, 0);
+}
+
+#countriesplaying {
+    text-align: center;
+    border-style: solid;
+    border-width: 0%;
+    border-color: rgb(0, 0, 0);
+}
+
+#countryflags {
+    width: 100%;
+    text-align: center;
+}
+
+#countryflags, tr, th {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+#countryflags tr th img {
+    height: 100%;
+    width: 105%;
+    background-color: black;
+}
+
+.socialbreak {
+    background-color: red;
+    border-style: solid;
+    border-width: 0%;
+    border-color: rgb(0, 0, 0);
+}
+
+.socialbreak a img {
+    background-color: black;
+    height: 100%;
+    width: 5%;
+}
+
+.socialbreak a:nth-child(1) {
+    padding-left: 12%;
+}
+
+.footer {
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+}
+
+.footer div {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    width: 50%;
+    padding: 1% 10%;
+}
+
+footer {
+    background-color: yellow;
+}
